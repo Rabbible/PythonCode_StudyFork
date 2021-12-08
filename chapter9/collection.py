@@ -1,7 +1,7 @@
 # coding=utf-8
-# 代码文件：chapter9/ch9.3.3.py
+# code file: chapter9/collection.py
 
-student_set = {'张三', '李四', '王五'}
+student_set = {'A', 'B', 'C'}
 
 for item in student_set:
     print(item)
