@@ -1,0 +1,8 @@
+Different module_names can import, if the module_names are same, you should use package.
+
+if you use package in python console, please add the following to the code that imports other codes:
+# import sys
+# import os
+# curPath = os.path.abspath(os.path.dirname(__file__))
+# rootPath = os.path.split(curPath)[0]
+# sys.path.append(os.path.split(rootPath)[0])
