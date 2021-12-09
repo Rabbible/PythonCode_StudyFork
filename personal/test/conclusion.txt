@@ -1,0 +1,16 @@
+the function of "if __name__ == '__main__':"
+
+A Python file is usually used in two ways:
+first,it can be executed directly as a script,
+and second,it can be invoked (module reuse) by importing it into another Python script.
+So if __name__ == '__main__': controls the process of executing code in both cases,
+in if __name__ == '__main__'：The following code is executed only in the first case
+(that is, the file is executed directly as a script),
+and imports into other scripts are not executed.
+
+
+in other words
+Determine whether the module is run directly or imported
+
+When a module is run directly, __name__ equals __main__,
+and when it is imported as a normal module, __name__ is the name of the module itself.
