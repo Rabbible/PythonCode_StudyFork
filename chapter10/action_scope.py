@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter9/ch10.4.py
+# 代码文件：chapter9/action_scope.py
 
 # 创建全局变量x
 x = 20

@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter10/ch10.7.1.py
+# 代码文件：chapter10/type_function.py
 
 
 def calculate_fun(opr):
@@ -21,6 +21,7 @@ f1 = calculate_fun('+')
 f2 = calculate_fun('-')
 
 print(type(f1))
+# 函数类型
 
 print("10 + 5 = {0}".format(f1(10, 5)))
 print("10 - 5 = {0}".format(f2(10, 5)))

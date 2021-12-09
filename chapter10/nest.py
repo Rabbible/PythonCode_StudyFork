@@ -1,8 +1,9 @@
 # coding=utf-8
-# 代码文件：chapter10/ch10.6.py
+# 代码文件：chapter10/nest.py
 
 
 def calculate(n1, n2, opr):
+    # opr 为操作符，如+，-，*，/
     multiple = 2
 
     # 定义相加函数
@@ -19,3 +20,4 @@ def calculate(n1, n2, opr):
 print(calculate(10, 5, '+'))  # 输出结果是30
 # add(10, 5) 发生错误
 # sub(10, 5)  发生错误
+# 里层函数不能被直接调用

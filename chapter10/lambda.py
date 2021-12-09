@@ -1,10 +1,13 @@
 # coding=utf-8
-# 代码文件：chapter10/ch10.7.2.py
+# 代码文件：chapter10/lambda.py
 
 
 def calculate_fun(opr):
     if opr == '+':
         return lambda a, b: (a + b)
+        # 匿名函数lambda（是函数，有函数类型也可以创建函数对象）：
+        # 格式：
+        # lambda 参数列表 ：lambda 体
     else:
         return lambda a, b: (a - b)
 

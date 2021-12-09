@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter9/ch10.3.1.py
+# 代码文件：chapter9/return.py
 
 def show_info(sep=':', **info):
     """定义**可变参数函数"""
