@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter11/ch11.3.8.py
+# 代码文件：chapter11/static_method.py
 
 
 class Account:
@@ -18,8 +18,9 @@ class Account:
 
     # 静态方法
     @staticmethod
+    # 既不与类绑定也不与实例绑定，为了提供一个基于类名的命名空间
     def interest_with(amt):
-        return Account.interest_by(amt)
+        return Account.interest_by(amt)  # 调用类方法
 
 
 interest1 = Account.interest_by(12_000.0)

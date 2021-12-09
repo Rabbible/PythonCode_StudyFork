@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter11/ch11.3.6.py
+# 代码文件：chapter11/Construct_instance_method.py
 
 
 class Animal(object):
@@ -9,6 +9,8 @@ class Animal(object):
         self.age = age  # 定义年龄实例变量
         self.sex = sex  # 定义性别实例变量
         self.weight = weight  # 定义体重实例变量
+
+# 构造实例方法
 
     def eat(self):
         self.weight += 0.05
@@ -21,7 +23,7 @@ class Animal(object):
 
 a1 = Animal(2, 0, 10.0)
 print('a1体重：{0:0.2f}'.format(a1.weight))
-a1.eat()
+a1.eat()  # 调用实例方法
 print('a1体重：{0:0.2f}'.format(a1.weight))
-a1.run()
+a1.run()  # 调用实例方法
 print('a1体重：{0:0.2f}'.format(a1.weight))

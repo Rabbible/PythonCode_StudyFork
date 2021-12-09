@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter11/ch11.3.7.py
+# 代码文件：chapter11/class_method.py
 
 
 class Account:
@@ -11,9 +11,11 @@ class Account:
         self.owner = owner  # 定义实例变量账户名
         self.amount = amount  # 定义实例变量账户金额
 
-    # 类方法
+    # 声明类方法
+    # 类方法与类绑定，不属于个体实例，不需要与实例绑定
     @classmethod
     def interest_by(cls, amt):
+        # cls 是type类型，是当前Account类型的实例
         print(cls)
         return cls.interest_rate * amt
 

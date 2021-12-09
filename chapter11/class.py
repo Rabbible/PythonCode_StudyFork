@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter11/ch11.3.2.py
+# 代码文件：chapter11/class.py
 
 
 class Animal(object):

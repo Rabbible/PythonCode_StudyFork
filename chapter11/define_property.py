@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter11/ch11.4.3.py
+# 代码文件：chapter11/define_property.py
 
 # class Animal(object):
 #     """定义动物类"""

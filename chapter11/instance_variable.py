@@ -1,11 +1,12 @@
 # coding=utf-8
-# 代码文件：chapter11/ch11.3.3.py
+# 代码文件：chapter11/instance_variable.py
 
 
 class Animal(object):
     """定义动物类"""
 
     def __init__(self, age, sex, weight):
+        # self 指向当前对象实例的引用
         self.age = age  # 定义年龄实例变量
         self.sex = sex  # 定义性别实例变量
         self.weight = weight  # 定义体重实例变量
