@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter11/ch11.5.1.py
+# 代码文件：chapter11/succession.py
 
 
 class Person:
@@ -10,8 +10,8 @@ class Person:
 
     def info(self):
         template = 'Person [name={0}, age={1}]'
-        s = template.format(self.name, self.age)
-        return s
+        _s = template.format(self.name, self.age)
+        return _s
 
 
 p = Person('小赵', 18)
@@ -27,19 +27,21 @@ print(p.info())
 #
 #     def info(self):
 #         template = 'Student [name={0}, age={1}, school={2}]'
-#         s = template.format(self.name, self.age, self.school)
-#         return s
+#         _s = template.format(self.name, self.age, self.school)
+#         return _s
 
 class Student(Person):
+    # 继承Person
 
     def __init__(self, name, age, school):
         super().__init__(name, age)
+        # 调用父类的构造方法，初始化父类实例变量
         self.school = school  # 所在学校
 
     # def info(self):
     #     template = 'Student [name={0}, age={1}, school={2}]'
-    #     s = template.format(self.name, self.age, self.school)
-    #     return s
+    #     _s = template.format(self.name, self.age, self.school)
+    #     return _s
 
 
 s = Student('Tom', 28, '清华大学')

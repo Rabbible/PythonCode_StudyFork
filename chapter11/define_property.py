@@ -30,15 +30,19 @@ class Animal(object):
         self.__weight = weight  # 定义体重实例成员变量
 
     @property
-    def weight(self):  # 替代get_weight(self):
+    def weight(self):  # 替代get_weight(self):     定义属性getter访问器
         return self.__weight
 
     @weight.setter
-    def weight(self, weight):  # 替代set_weight(self, weight):
+    def weight(self, weight):  # 替代set_weight(self, weight):      定义属性setter访问器
         self.__weight = weight
 
 
 a1 = Animal(2, 0, 10.0)
-print('a1体重：{0:0.2f}'.format(a1.weight))
+print('a1体重：{0:0.2f}'.format(a1.weight))  # 这样就可以通过属性来取值
 a1.weight = 123.45  # a1.set_weight(123.45)
 print('a1体重：{0:0.2f}'.format(a1.weight))
+# 属性本质上就是两个方法，在方法前加上装饰器使得方法成为属性。
+# 属性使用起来类似公有变量，可以在赋值符号“=”左边或者右边，左边是被赋值，右边是取值
+# 定义属性时，应该先定义getter访问器，再定义setter访问器
+# 因为@property修饰getter访问器时，定义了weight属性，这样在后面使用@weight.setter装饰器才是合法的

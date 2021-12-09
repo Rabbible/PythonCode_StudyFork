@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter11/ch11.5.2.py
+# 代码文件：chapter11/overwrite_method.py
 
 
 class Animal(object):
@@ -15,6 +15,7 @@ class Animal(object):
         print('动物吃...')
 
 
+# overwrite
 class Dog(Animal):
     def eat(self):
         self.weight += 0.1

@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter11/ch11.6.3.py
+# 代码文件：chapter11/duck_typing.py
 
 class Animal(object):
     def run(self):
@@ -13,6 +13,7 @@ class Dog(Animal):
 
 class Car:
     def run(self):
+        # 由于python不做类型检查，所以emmmmmm虽然car不属于animal，但是他依旧可以用.run()，这就是鸭子类型
         print('汽车跑...')
 
 

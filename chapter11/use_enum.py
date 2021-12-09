@@ -1,5 +1,5 @@
 # coding=utf-8
-# 代码文件：chapter11/ch11.8.3.py
+# 代码文件：chapter11/use_enum.py
 
 import enum
 
